@@ -12,5 +12,8 @@ $(TARGET): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+fmt:
+	clang-format -i --style=Google *.[ch]  
+
 clean:
 	rm -f $(OBJS) $(TARGET)
