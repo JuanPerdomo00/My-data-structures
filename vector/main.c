@@ -1,9 +1,10 @@
-#include "vector.h"
 #include <stdint.h>
 #include <stdio.h>
 
+#include "vector.h"
+
 int main() {
-  Vector *v = new_vector();
+  Vector* v = new_vector();
 
   for (int32_t i = 0; i < 10; i++) {
     append(v, i + 1);
